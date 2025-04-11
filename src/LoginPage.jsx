@@ -8,6 +8,9 @@ const Login = () => {
     
     navigate('/admin'); 
   };
+  const handelForget = () =>{
+    navigate('/forget')
+  }
 
   return (
     <div className='logindiv'>
@@ -25,7 +28,7 @@ const Login = () => {
         <div className="mdpsinp">
           <div className='forget'>
             <label htmlFor=" password">Password:</label>
-            <a href='' className='fomdps'> Forget Password?</a>
+            <a href={handelForget} className='fomdps'> Forget Password?</a>
           </div>
           
           <input type="password" name="Password" id="Password" />  
