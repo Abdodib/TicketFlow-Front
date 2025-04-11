@@ -6,8 +6,57 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.logindiv{
+  display: flex;
+    justify-content: center; /* أفقياً */
+    align-items: center;     /* عمودياً */
+    height: 100vh; 
+    flex-direction: column;
+    
+}
+.loginbtn{
+  padding:5px 20px ;
+color: white;  
+  border-radius: 10px;
+  background-color: black;
+  cursor: pointer;
+}
+.forget{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.fomdps{
+  font-size:xx-small;
+  color: gray;
+  margin: 0%;
+  
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.loginform{
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  justify-content:flex-start;
+  gap: 15px;
+  padding: 5px;
+  border-radius: 16px;
+  border-color: B0B0B0;
+  border: 2px solid;
+  width: 290px;
+  height: 340px;
+  
+}
+.mailinp{
+display: flex;
+flex-direction: column;
+
+}
+.mdpsinp{
+  display: flex;
+  flex-direction: column;
+  
+  
 }
