@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './LoginPage'; // استورد صفحة تسجيل الدخول (أو صفحة أخرى)
-import Admin from './adminDashboard'; // استورد صفحة الـ Admin
-import Forget from './forgetMotdepass';
+import Login from './components/LoginPage'; // استورد صفحة تسجيل الدخول (أو صفحة أخرى)
+import Admin from './components/adminDashboard'; // استورد صفحة الـ Admin
+import Forget from './components/forgetMotdepass';
 
 function App() {
   return (
