@@ -1,0 +1,405 @@
+:root {
+    /* Color Scheme */
+    --navy-blue: #0a192f;
+    --navy-blue-light: #172a45;
+    --navy-blue-lighter: #303f60;
+    --dark-gray: #1e293b;
+    --dark-gray-light: #334155;
+    --heavy-gray: #4b5563;
+    --heavy-gray-light: #6b7280;
+    --accent-blue: #3b82f6;
+    --accent-blue-light: #60a5fa;
+    --white: #ffffff;
+    --light-gray: #f1f5f9;
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --border-color: #2d3748;
+    --positive: #10b981;
+    --negative: #ef4444;
+    --warning: #f59e0b;
+  }
+  
+  /* Base Styles */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--navy-blue);
+    color: var(--text-primary);
+  }
+  
+  /* Layout */
+  .tickets-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 280px;
+    background-color: var(--navy-blue-light);
+    padding: 1.5rem 1rem;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    border-right: 1px solid var(--border-color);
+  }
+  
+  .tickets-container.sidebar-collapsed .sidebar {
+    width: 80px;
+  }
+  
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .app-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+  
+  .sidebar-toggle {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .sidebar-toggle:hover {
+    background-color: var(--navy-blue-lighter);
+  }
+  
+  .sidebar-section {
+    margin: 1.5rem 0;
+  }
+  
+  .section-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+  }
+  
+  .nav-menu {
+    list-style: none;
+  }
+  
+  .nav-item {
+    margin-bottom: 0.25rem;
+  }
+  
+  .nav-item a {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s;
+    gap: 1rem;
+  }
+  
+  .nav-item a:hover {
+    background-color: var(--navy-blue-lighter);
+    color: var(--text-primary);
+  }
+  
+  .nav-item a.active {
+    background-color: var(--accent-blue);
+    color: white;
+  }
+  
+  .nav-icon {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .user-profile {
+    margin-top: auto;
+    padding: 1rem 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--accent-blue);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  
+  .user-info {
+    overflow: hidden;
+  }
+  
+  .user-name {
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .user-email {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--navy-blue);
+  }
+  
+  .tickets-header {
+    margin-bottom: 2rem;
+  }
+  
+  .tickets-header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+  
+  .search-filter {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-container {
+    flex: 1;
+    position: relative;
+    max-width: 400px;
+  }
+  
+  .search-container input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    background-color: var(--navy-blue-light);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+  }
+  
+  .search-container input:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+  }
+  
+  .filter-dropdown {
+    position: relative;
+  }
+  
+  .filter-dropdown select {
+    padding: 0.75rem 2rem 0.75rem 1rem;
+    background-color: var(--navy-blue-light);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--text-primary);
+    font-size: 0.875rem;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .filter-dropdown select:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+  }
+  
+  .dropdown-arrow {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--text-secondary);
+  }
+  
+  /* Tickets Table */
+  .tickets-table {
+    background-color: var(--navy-blue-light);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+  }
+  
+  .table-header {
+    display: grid;
+    grid-template-columns: 100px 2fr 100px 120px 120px 120px;
+    background-color: var(--dark-gray);
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+  }
+  
+  .header-cell {
+    padding: 0.5rem;
+  }
+  
+  .ticket-row {
+    display: grid;
+    grid-template-columns: 100px 2fr 100px 120px 120px 120px;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    align-items: center;
+  }
+  
+  .ticket-row:last-child {
+    border-bottom: none;
+  }
+  
+  .ticket-row:hover {
+    background-color: var(--navy-blue-lighter);
+  }
+  
+  .ticket-cell {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .id-cell {
+    font-weight: 600;
+    color: var(--accent-blue);
+  }
+  
+  .title-cell {
+    font-weight: 500;
+  }
+  
+  /* Badges */
+  .priority-badge,
+  .status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  
+  .priority-badge.high {
+    background-color: rgba(239, 68, 68, 0.1);
+    color: var(--negative);
+  }
+  
+  .priority-badge.medium {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: var(--warning);
+  }
+  
+  .priority-badge.low {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--positive);
+  }
+  
+  .status-badge.open {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: var(--accent-blue);
+  }
+  
+  .status-badge.in-progress {
+    background-color: rgba(245, 158, 11, 0.1);
+    color: var(--warning);
+  }
+  
+  .status-badge.received {
+    background-color: rgba(148, 163, 184, 0.1);
+    color: var(--heavy-gray-light);
+  }
+  
+  /* No Results */
+  .no-results {
+    grid-column: 1 / -1;
+    padding: 2rem;
+    text-align: center;
+    color: var(--text-secondary);
+    font-style: italic;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .tickets-table {
+      overflow-x: auto;
+    }
+    
+    .table-header,
+    .ticket-row {
+      width: fit-content;
+      min-width: 100%;
+    }
+    
+    .header-cell,
+    .ticket-cell {
+      min-width: 120px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 80px;
+    }
+    
+    .sidebar-header {
+      justify-content: center;
+    }
+    
+    .app-title,
+    .nav-text,
+    .section-title,
+    .user-info {
+      display: none;
+    }
+    
+    .search-filter {
+      flex-direction: column;
+    }
+    
+    .search-container {
+      max-width: 100%;
+    }
+  }

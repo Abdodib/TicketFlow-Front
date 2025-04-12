@@ -7,6 +7,8 @@ import AnalyticsPage from './component/Analyse'
 import UserManagement from './component/usersmange';
 import Login from './component/LoginPage';
 import TicketsPage from './component/Tickets';
+import EmployerDash from './component/EmployerDash';
+import AddTicket from './component/AddTickets';
 
 
 
@@ -24,6 +26,8 @@ function App() {
             <Route path='/analytics' element={<AnalyticsPage />} />
             <Route path='/usersManagement' element={<UserManagement />} />
             <Route path='/tickets' element={<TicketsPage />} />
+            <Route path='/employerDash' element={<EmployerDash />} />
+            <Route path='/addTicket' element={<AddTicket />} />
 
           </Routes>
         

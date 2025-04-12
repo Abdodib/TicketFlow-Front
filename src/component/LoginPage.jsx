@@ -7,7 +7,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    navigate('/admin');
+    navigate('/employerDash');
   };
 
   return (
