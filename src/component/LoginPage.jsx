@@ -9,6 +9,11 @@ const Login = () => {
     e.preventDefault();
     navigate('/employerDash');
   };
+  const handleowner = (e) => {
+
+    e.preventDefault();
+    navigate('/adminDashboard');
+  };
 
   return (
     <div className="login-container">
@@ -26,10 +31,12 @@ const Login = () => {
               placeholder="Enter your password"
             />
           </div>
-
+<div className="btns"></div>
           <button type="submit" className="login-button">
             Login
           </button>
+<button  className='login-button' onClick={ handleowner}>login as owner </button>
+
         </form>
       </div>
     </div>

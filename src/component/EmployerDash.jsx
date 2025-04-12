@@ -80,19 +80,6 @@ const MyTickets = () => {
             ))}
           </ul>
         </div>
-
-
-        <div className="user-profile">
-          <div className="user-avatar">
-            {user.name?.charAt(0) || 'U'}
-          </div>
-          {sidebarOpen && (
-            <div className="user-info">
-              <div className="user-name">{user.name || 'Unknown User'}</div>
-              <div className="user-email">{user.email || 'No email'}</div>
-            </div>
-          )}
-        </div>
       </div>
 
       {/* Main Content */}
