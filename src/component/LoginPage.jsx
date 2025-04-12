@@ -12,7 +12,7 @@ const Login = () => {
   const handleowner = (e) => {
 
     e.preventDefault();
-    navigate('/adminDashboard');
+    navigate('/admin');
   };
 
   return (
