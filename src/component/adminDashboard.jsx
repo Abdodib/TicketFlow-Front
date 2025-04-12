@@ -9,7 +9,7 @@ const TaskerFlowDashboard = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [activeNavItem, setActiveNavItem] = useState('Dashboard');
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  //const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const navItems = [
     { name: "Dashboard", path: "/admin" },
