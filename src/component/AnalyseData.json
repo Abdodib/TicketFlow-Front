@@ -1,0 +1,23 @@
+
+{
+  "metrics": [
+    {
+      "title": "Total Tickets",
+      "value": "1,284",
+      "change": "+12.5% from last year"
+    },
+    {
+      "title": "Avg. Response Time",
+      "value": "8.2 hours",
+      "change": "+5% from last year"
+    }
+  ],
+  "monthlyTickets": [
+    {"month": "Jan", "count": 120},
+    {"month": "Feb", "count": 135}
+  ],
+  "responseTimes": [
+    {"month": "Jan", "hours": 7.8},
+    {"month": "Feb", "hours": 8.1}
+  ]
+}

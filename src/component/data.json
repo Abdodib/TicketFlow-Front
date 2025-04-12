@@ -1,0 +1,81 @@
+{
+    "metrics": [
+      {
+        "title": "Total Tickets",
+        "value": "1,284",
+        "change": "+12.5% from last year"
+      },
+      {
+        "title": "Avg. Response Time",
+        "value": "8.2 hours",
+        "change": "-15% from last year"
+      },
+      {
+        "title": "Resolution Rate",
+        "value": "94.3%",
+        "change": "+2.1% from last year"
+      },
+      {
+        "title": "Customer Satisfaction",
+        "value": "4.8/5",
+        "change": "+0.3 from last year"
+      }
+    ],
+    "openTicketsCount": 24,
+    "recentTickets": [
+      {
+        "id": 1001,
+        "title": "Software installation request",
+        "priority": "Medium",
+        "department": "HR"
+      },
+      {
+        "id": 1002,
+        "title": "Network connectivity issue",
+        "priority": "Low",
+        "department": "IT"
+      },
+      {
+        "id": 1003,
+        "title": "Software installation request",
+        "priority": "High",
+        "department": "HR"
+      },
+      {
+        "id": 1004,
+        "title": "Network connectivity issue",
+        "priority": "Medium",
+        "department": "IT"
+      }
+    ],
+    "distribution": {
+      "departments": [
+        {
+          "name": "IT Department",
+          "percentage": "68%"
+        },
+        {
+          "name": "HR Department",
+          "percentage": "24%"
+        },
+        {
+          "name": "Maintenance",
+          "percentage": "8%"
+        }
+      ],
+      "priorities": [
+        {
+          "name": "High Priority",
+          "percentage": "32%"
+        },
+        {
+          "name": "Medium Priority",
+          "percentage": "45%"
+        },
+        {
+          "name": "Low Priority",
+          "percentage": "23%"
+        }
+      ]
+    }
+  }

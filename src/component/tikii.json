@@ -1,0 +1,31 @@
+{
+    "tickets": [
+      {
+        "id": "TICK-1001",
+        "title": "Network connectivity issue in marketing department",
+        "category": "IT",
+        "priority": "High",
+        "status": "Open",
+        "created": "Apr 12, 2023",
+        "assignee": "John Smith"
+      },
+      {
+        "id": "TICK-1002",
+        "title": "Request for new laptop for new hire",
+        "category": "Hardware",
+        "priority": "Medium",
+        "status": "In Progress",
+        "created": "Apr 11, 2023",
+        "assignee": "Sarah Johnson"
+      },
+      {
+        "id": "TICK-1003",
+        "title": "Printer not working in finance department",
+        "category": "Maintenance",
+        "priority": "Low",
+        "status": "Resolved",
+        "created": "Apr 10, 2023",
+        "assignee": "Mike Brown"
+      }
+    ]
+  }

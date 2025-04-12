@@ -1,0 +1,165 @@
+.tickets-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tickets-header {
+  margin-bottom: 2rem;
+}
+
+.tickets-header h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-select {
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.tickets-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.ticket-card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ticket-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ticket-id {
+  font-weight: 600;
+  color: #4299e1;
+  text-decoration: none;
+}
+
+.ticket-id:hover {
+  text-decoration: underline;
+}
+
+.priority, .status {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.priority.high {
+  background-color: #fed7d7;
+  color: #e53e3e;
+}
+
+.priority.medium {
+  background-color: #feebcb;
+  color: #dd6b20;
+}
+
+.priority.low {
+  background-color: #c6f6d5;
+  color: #38a169;
+}
+
+.status.open {
+  background-color: #bee3f8;
+  color: #3182ce;
+}
+
+.status.in-progress {
+  background-color: #feebcb;
+  color: #dd6b20;
+}
+
+.status.resolved {
+  background-color: #c6f6d5;
+  color: #38a169;
+}
+
+.ticket-title {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #2d3748;
+}
+
+.ticket-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: #718096;
+}
+
+.category {
+  background-color: #edf2f7;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.loading, .no-results {
+  text-align: center;
+  padding: 2rem;
+  color: #718096;
+}
+
+.error {
+  color: #e53e3e;
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .tickets-container {
+    padding: 1rem;
+  }
+  
+  .filter-controls {
+    flex-direction: column;
+  }
+  
+  .filter-select {
+    width: 100%;
+  }
+}

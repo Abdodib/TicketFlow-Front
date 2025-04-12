@@ -1,0 +1,50 @@
+
+{
+    "users": [
+      {
+        "name": "John Smith",
+        "email": "john.smith@example.com",
+        "role": "Admin",
+        "department": "IT",
+        "status": "Active",
+        "lastActive": "Apr 12, 2023"
+      },
+      {
+        "name": "Sarah Johnson",
+        "email": "sarah.johnson@example.com",
+        "role": "Manager",
+        "department": "IT",
+        "status": "Active",
+        "lastActive": "Apr 11, 2023"
+      },
+      {
+        "name": "Mike Brown",
+        "email": "mike.brown@example.com",
+        "role": "Employee",
+        "department": "Maintenance",
+        "status": "Active",
+        "lastActive": "Apr 10, 2023"
+      },
+      {
+        "name": "Emily Johnson",
+        "email": "emily.johnson@example.com",
+        "role": "Manager",
+        "department": "Marketing",
+        "status": "Active",
+        "lastActive": "Apr 9, 2023"
+      },
+      {
+        "name": "David Wilson",
+        "email": "david.wilson@example.com",
+        "role": "Employee",
+        "department": "HR",
+        "status": "Inactive",
+        "lastActive": "Mar 15, 2023"
+      }
+    ],
+    "filters": {
+      "roles": ["All Roles", "Admin", "Manager", "Employee"],
+      "departments": ["All Departments", "IT", "Maintenance", "Marketing", "HR"],
+      "statuses": ["All Statuses", "Active", "Inactive"]
+    }
+  }
