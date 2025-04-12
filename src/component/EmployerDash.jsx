@@ -5,7 +5,7 @@ import './MyTickets.css';
 
 const MyTickets = () => {
   const navItems = [
-      { name: "My Tickets", path: "/MyTickets", icon: "📈" },
+      { name: "My Tickets", path: "/employerDash", icon: "📈" },
       { name: "Add Tickets", path: "/addTicket", icon: "📊" },
     { name: "LOGOUT", path: "/", icon: "🎫" }
   ];
